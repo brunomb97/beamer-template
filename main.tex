@@ -1,0 +1,124 @@
+\documentclass[xcolor=dvipsname]{beamer}
+
+\usetheme{AnnArbor}
+
+\newcommand{\Titulo}{Sweeping process with regular and nonregular sets}
+\newcommand{\Autor}{Lionel Thibault}
+\newcommand{\Nombre}{Bruno Martinez Barrera}
+\newcommand{\Ramo}{Inclusiones Diferenciales}
+\newcommand{\Sigla}{MAT472}
+\newcommand{\Rol}{2016 10 007 - 5}
+\newcommand{\Correo}{bruno.martinez@sansano.usm.cl}
+\newcommand{\ProfesorI}{Christopher Hermosilla}
+
+\title{\Titulo}
+\subtitle{\Autor}
+\author{\Nombre}
+\institute{
+  Departamento de Matemática\\
+  Universidad Técnica Federico Santa María}
+\date{\today}
+
+\subject{\Sigla}
+
+\definecolor{Black}{rgb}{0,0,0}
+\definecolor{Green}{rgb}{0,0.4392,0.1019}
+\definecolor{Grey}{rgb}{0.851,0.851,0.851}
+
+\setbeamercolor{title}{bg=Grey,fg=black}
+\setbeamercolor{frametitle}{bg=Grey,fg=black}
+\setbeamercolor{palette primary}{bg=Black,fg=black}
+\setbeamercolor{palette secondary}{bg=Green,fg=black}
+\setbeamercolor{palette tertiary}{bg=Green,fg=black}
+\setbeamercolor{palette quaternary}{bg=Green,fg=black}
+\setbeamercolor{structure}{bg=Green,fg=black}
+\setbeamercolor{section in toc}{bg=black}
+
+\pgfdeclareimage[height=0.75cm]{university-logo}{utfsm.pdf}
+\logo{\pgfuseimage{university-logo}}
+
+\usepackage[brazil,spanish]{babel}
+
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{subfiles}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{calc}
+
+\usepackage{bbm}
+\usepackage[notquote]{hanging}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{latexsym}
+\usepackage{dsfont}
+\usepackage[framemethod=TikZ]{mdframed}
+
+\usepackage{makeidx}
+\makeindex
+
+\usepackage{custom}
+
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Tabla de Contenidos}
+  \tableofcontents
+\end{frame}
+
+\section{Introducción}
+
+    \begin{frame}
+        \frametitle{Tabla de Contenidos}
+        \tableofcontents[currentsection]
+    \end{frame}
+
+    \subfile{01-introduccion/01-introduccion.tex}
+    
+\section{Definiciones}
+    \begin{frame}
+        \frametitle{Tabla de Contenidos}
+        \tableofcontents[currentsection]
+    \end{frame}
+
+    \subfile{02-definiciones/02-definiciones.tex}
+    
+\section{Sección 3}
+    \begin{frame}
+        \frametitle{Tabla de Contenidos}
+        \tableofcontents[currentsection]
+    \end{frame}
+
+    \subfile{03-seccion03/03-seccion03.tex}
+    
+\section{Sección 4}
+    \begin{frame}
+        \frametitle{Tabla de Contenidos}
+        \tableofcontents[currentsection]
+    \end{frame}
+
+    \subfile{04-seccion04/04-seccion04.tex}
+    
+\section{Sección 5}
+    \begin{frame}
+        \frametitle{Tabla de Contenidos}
+        \tableofcontents[currentsection]
+    \end{frame}
+    
+    \subfile{05-seccion05/05-seccion05.tex}
+
+\end{document}
